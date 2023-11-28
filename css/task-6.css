@@ -1,0 +1,35 @@
+#controls,
+#boxes {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+#controls {
+  margin-bottom: 16px;
+}
+input {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  padding: 8px 72px;
+  text-align: center;
+}
+button {
+  border-radius: 8px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  border: none;
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+button:last-child {
+  background: #ff4e4e;
+}
