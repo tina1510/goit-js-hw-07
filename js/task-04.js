@@ -14,8 +14,14 @@ function handleSubmit(event) {
       return;
   }
 
-    console.log(`Email: ${email}`);
-console.log(`Password: ${password}`);
+  const personalDate = {
+    email,
+    password,
+  }
+
+
+    console.log(personalDate);
+
   form.reset();
 }
     

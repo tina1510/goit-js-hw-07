@@ -11,6 +11,7 @@ const boxes = document.querySelector('#boxes');
 
 function createBoxes(element) {
   const boxSize = 30;
+  const elements = [];
 boxes.innerHTML = '';
 
   for (let i = 0; i < element; i++) {
@@ -21,8 +22,9 @@ boxes.innerHTML = '';
     box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
 
-    boxes.appendChild(box);
+    elements.push(box);
   }
+  boxes.append(...elements);
 }
 
 createBtn.addEventListener('click', () => {
@@ -41,4 +43,5 @@ destroyBtn.addEventListener('click', () => {
   boxes.innerHTML = '';
 }
 );
+
 
